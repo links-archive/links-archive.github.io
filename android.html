@@ -1,0 +1,106 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Archive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:400,300,600">
+    <link rel="stylesheet" type="text/css" href="files/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="files/css/skeleton.css">
+    <link rel="icon" type="image/svg" href="files/favicon.svg">
+</head>
+<body><div class="container"><div class="row">
+    <section class="header">
+        <h1>Archive</h1>
+        <h2 id="title"></h2>
+    </section>
+
+    <hr>
+
+    <select class="u-full-width" onchange="selectOpt(this.value)" id="navi"></select>
+
+    <table class="u-full-width">
+        <tbody>
+            <tr>
+                <td>Разработка на Android</td>
+                <td><a href="https://developer.android.com/">&gt;&gt;</a></td>
+            </tr>
+            <tr>
+                <td>Настроить параметры разработчика на устройстве</td>
+                <td><a href="https://developer.android.com/studio/debug/dev-options#enable">&gt;&gt;</a></td>
+            </tr>
+            <tr>
+                <td>Start Android - учебник по Android</td>
+                <td><a href="https://startandroid.ru/ru/">&gt;&gt;</a></td>
+            </tr>
+            <tr>
+                <td>
+                    Android Asset Studio<br>
+                    Набор инструментов для простого создания ресурсов, таких как значки запуска для вашего приложения Android.
+                </td>
+                <td><a href="https://romannurik.github.io/AndroidAssetStudio/index.html">&gt;&gt;</a></td>
+            </tr>
+            <tr>
+                <td>
+                    Drawables · codepath/android_guides Wiki · GitHub<br>
+                    Общая концепция графики, которую можно нарисовать на экране. Чертежи используются для определения форм, цветов, границ, градиентов и т. Д., Которые затем могут применяться к представлениям в Activity.<br>
+                    Обычно это используется для настройки графики представления, которая отображается в конкретном представлении или контексте. Чертежи обычно определяются в XML, а затем могут применяться к представлению через XML или Java.
+                </td>
+                <td><a href="https://github.com/codepath/android_guides/wiki/Drawables">&gt;&gt;</a></td>
+            </tr>
+            <tr>
+                <td>
+                    Android - How to make the XML file for a icon? - Stack Overflow
+                </td>
+                <td><a href="https://stackoverflow.com/questions/33382390/android-how-to-make-the-xml-file-for-a-icon">&gt;&gt;</a></td>
+            </tr>                       
+            <tr>
+                <td>
+                    Android - How to make layout with rounded corners..? - Stack Overflow
+                </td>
+                <td><a href="https://stackoverflow.com/questions/16161448/how-to-make-layout-with-rounded-corners">&gt;&gt;</a></td>
+            </tr>  
+            <tr>
+                <td>
+                    <b>Пути</b> представляют собой контур формы, который можно заливать, обводить, использовать в качестве обтравочного контура или любую их комбинацию.<br><br>
+                    Общая информация о данных пути<br><br>
+                    Команды эллиптической кривой дуги
+                </td>
+                <td>
+                    <a href="https://www.w3.org/TR/SVG11/paths.html">&gt;&gt;</a><br><br>
+                    <a href="https://www.w3.org/TR/SVG11/paths.html#PathData">&gt;&gt;</a><br><br>
+                    <a href="https://www.w3.org/TR/SVG11/paths.html#PathDataEllipticalArcCommands">&gt;&gt;</a>
+                </td>
+            </tr>
+            <tr>
+                <td>App bars: top (Material Design)</td>
+                <td><a href="https://material.io/components/app-bars-top/android#using-top-app-bars">&gt;&gt;</a></td>
+            </tr>
+            <tr>
+                <td>Icons - Google Fonts</td>
+                <td><a href="https://fonts.google.com/icons">&gt;&gt;</a></td>
+            </tr>
+                          
+        </tbody>
+    </table><br>
+
+    <h3>Как изменить стандартную иконку Апк приложенния сделанного на Android Studio?</h3>
+    <p>Добавить в папку drawable нужное изображение и в файле Manifest прописать путь android:icon="@drawable/название_изображения"</p>
+    <xmp>
+    <application android:label="@string/app_name"
+        android:icon="@drawable/ic_launcher"
+        android:theme="@android:style/Theme.Holo.Light">
+        <activity android:name=".DeviceScanActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".DeviceControlActivity"/>
+            
+        <service android:name=".BluetoothLeService" android:enabled="true"/>
+    </application>
+    </xmp>
+</body></div></div>
+<script src="files/js/base.js"></script>
+</html>
